@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Hello World</title>
+
+    <style>
+      body {
+        border: 1px solid black;
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="shared/elements/gaia-theme/gaia-theme.css">
+    <link rel="stylesheet" type="text/css" href="shared/elements/gaia_tabs/style.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/softkey.css"/>
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+
+    <script type="shared/elements/gaia_tabs/script.js" defer></script>
+    <script defer src="shared/js/lazy_loader.js"></script>
+    <script src="shared/js/l10n.js"></script>
+
+    <!-- Navigation files -->
+    <script defer src="shared/js/navigation_handler.js"></script>
+    <script defer src="shared/js/navigation_helper.js"></script>
+    <script defer src="shared/js/softkey_panel.js"></script>
+
+    <script src="js/navigation_map.js" defer></script>
+    <script src="js/app.js" defer></script>
+     <script src="js/tab.js" defer></script>
+
+  </head>
+
+  <body class="theme-system">
+
+  <section id='main'>
+    <ul id="btnlist">
+      <li id="btn_1" >
+        <div >Button 1</div>
+      </li>
+      <li id="btn_2 " >
+        <div>Button 2</div>
+      </li>
+    </ul>
+  </section>
+
+
+  <section id="view" class="hide">
+    <div>tab1 view </div>
+      <gaia-tabs>
+       <a class="seleted"> 
+        <span>tab 1</span>
+       </a>
+
+       <a>
+        <span>tab 2</span>
+       </a>
+    </gaia-tabs>
+
+    <section id="view_1" class="hide">
+      <div>tab1 view </div>
+    </section>
+    <section id="view_2" class="hide">
+      <div>tab2 view </div>
+    </section>
+  </section>
+
+
+
+  </body>
+
+</html>
